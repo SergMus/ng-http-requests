@@ -1,0 +1,63 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+
+  .card {
+    border: 1px solid grey;
+    padding: 30px;
+    &:not(:first-of-type) {
+      border-top: none;
+    }
+
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      width: 400px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      &:focus {
+        outline: 3px solid #ccc;
+      }
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .completed {
+      text-decoration: line-through;
+    }
+    .item {
+      font-size: 22px;
+    }
+
+    .btn {
+      background-color: #04aa6d;
+      padding: 8px 10px;
+      font-size: 16px;
+      min-width: 100px;
+      margin-right: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      &:active {
+        background-color: green;
+      }
+      &:disabled {
+        background-color: lightgray;
+      }
+    }
+
+    .btn-danger {
+      background-color: red;
+    }
+  }
+  .error {
+    color: red;
+  }
+}
